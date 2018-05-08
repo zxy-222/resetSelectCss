@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        select {
+            width: 320px;
+            height: 32px;
+        }
+        select {
+        /*Chrome同Firefox与IE里面的右侧三角显示的样式不同*/
+            border: solid 1px #ddd;
+             /*将默认的select选择框样式清除*/
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            padding-right: 14px;
+            background:url(./arrow.png) no-repeat;
+            background-position:100%,center;
+         /*如果要加入自定义图片， 就增加这个属性 background: url或者在html中直接加入图标也行*/
+        }
+        /*清除iIE的默认选择框样式*/
+        select::-ms-expand { display: none; }
+    </style>
+</head>
+<body>
+    <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+</body>
+</html>
